@@ -12,6 +12,6 @@ A Book Collection app that allows users to see a landing page.
 
 ## LICENSE
 
-<!-- [MIT LICENSE](LICENSE) -->
+[MIT LICENSE](LICENSE)
 
 &copy; 2024 Ryan Gading Abdullah. All rights reserved.
