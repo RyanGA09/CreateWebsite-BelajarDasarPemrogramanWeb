@@ -1,63 +1,32 @@
-// let book = document.querySelectorAll(".book");
+// Menggunakan Event Delegation untuk Efisiensi
+document.addEventListener("DOMContentLoaded", () => {
+  const bookSection = document.getElementById("bookRecommendation");
 
-// for (books of book) {
-//   books.addEventListener("mouseover", function (event) {
-//     if (event.target.id === "struktur") {
-//       event.target.setAttribute("src", "assets/img/stukturData2.jpg");
-//       return;
-//     } else if (event.target.id === "mind") {
-//       event.target.setAttribute("src", "assets/img/mindset2.jpg");
-//       return;
-//     } else if (event.target.id === "sakti") {
-//       event.target.setAttribute("src", "assets/img/bukuSaktiWeb2.jpg");
-//       return;
-//     } else if (event.target.id === "self") {
-//       event.target.setAttribute("src", "assets/img/selfHealing2.jpg");
-//       return;
-//     }
-//   });
+  bookSection.addEventListener("mouseover", (event) => {
+    const target = event.target;
+    const imageMap = {
+      struktur: "assets/img/stukturData2.jpg",
+      mind: "assets/img/mindset2.jpg",
+      sakti: "assets/img/bukuSaktiWeb2.jpg",
+      self: "assets/img/selfHealing2.jpg",
+    };
 
-//   books.addEventListener("mouseout", function (event) {
-//     if (event.target.id === "struktur") {
-//       event.target.setAttribute("src", "assets/img/stukturData.jpg");
-//       return;
-//     } else if (event.target.id === "mind") {
-//       event.target.setAttribute("src", "assets/img/mindset.jpg");
-//       return;
-//     } else if (event.target.id === "sakti") {
-//       event.target.setAttribute("src", "assets/img/bukuSaktiWeb.jpg");
-//       return;
-//     } else if (event.target.id === "self") {
-//       event.target.setAttribute("src", "assets/img/selfHealing.jpg");
-//       return;
-//     }
-//   });
-// }
-
-let book = document.querySelectorAll(".book");
-
-for (books of book) {
-  books.addEventListener("mouseover", function (event) {
-    if (event.target.id === "struktur") {
-      event.target.setAttribute("src", "assets/img/stukturData2.jpg");
-    } else if (event.target.id === "mind") {
-      event.target.setAttribute("src", "assets/img/mindset2.jpg");
-    } else if (event.target.id === "sakti") {
-      event.target.setAttribute("src", "assets/img/bukuSaktiWeb2.jpg");
-    } else if (event.target.id === "self") {
-      event.target.setAttribute("src", "assets/img/selfHealing2.jpg");
+    if (imageMap[target.id]) {
+      target.src = imageMap[target.id];
     }
   });
 
-  books.addEventListener("mouseout", function (event) {
-    if (event.target.id === "struktur") {
-      event.target.setAttribute("src", "assets/img/stukturData.jpg");
-    } else if (event.target.id === "mind") {
-      event.target.setAttribute("src", "assets/img/mindset.jpg");
-    } else if (event.target.id === "sakti") {
-      event.target.setAttribute("src", "assets/img/bukuSaktiWeb.jpg");
-    } else if (event.target.id === "self") {
-      event.target.setAttribute("src", "assets/img/selfHealing.jpg");
+  bookSection.addEventListener("mouseout", (event) => {
+    const target = event.target;
+    const originalImageMap = {
+      struktur: "assets/img/stukturData.jpg",
+      mind: "assets/img/mindset.jpg",
+      sakti: "assets/img/bukuSaktiWeb.jpg",
+      self: "assets/img/selfHealing.jpg",
+    };
+
+    if (originalImageMap[target.id]) {
+      target.src = originalImageMap[target.id];
     }
   });
-}
+});

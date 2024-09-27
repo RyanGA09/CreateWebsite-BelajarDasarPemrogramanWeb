@@ -1,71 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
-    <title>Website Koleksi Buku</title>
-    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Website koleksi buku Ryan. Temukan berbagai koleksi buku rekomendasi dan informasi tentang buku-buku menarik."
+    />
+    <meta
+      name="keywords"
+      content="koleksi buku, buku rekomendasi, buku Ryan, buku IT, buku motivasi"
+    />
+    <meta name="author" content="Ryan Gading Abdullah" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Koleksi Buku</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTTX4dV40VfaQyZ0XkZvRrfbl9h+3Wic7sErRKnf5+lphVthAmhDq8ZJ7k5Jp3hkW4cdl5Y5mQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS Library for Scroll Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
   </head>
 
   <body>
     <header>
-      <div>
-        <p class="gambarUtamaTengah">
-          <img src="assets/img/header.jpg" width="500" height="200" /><br />
-        </p>
-        <center>
-          <h1>
-            <b
-              ><font color="red">Koleksi Buku</font
-              ><font color="blue"> Ryan</font></b
-            >
-          </h1>
-        </center>
-        <center>
-          <h2>
-            <marquee
-              behavior="scroll"
-              direction="right"
-              width="1500"
-              height="30"
-              >Selamat Datang</marquee
-            >
-          </h2>
-        </center>
-        <center>
-          <h2>
-            <marquee behavior="scroll" direction="left" width="1500" height="30"
-              >di Website Koleksi Buku Ryan</marquee
-            >
-          </h2>
-        </center>
+      <div class="header-content">
+        <div class="gambarUtamaTengah">
+          <img
+            src="assets/img/header.jpg"
+            alt="Header Koleksi Buku"
+            class="header-image"
+          />
+        </div>
+        <h1 class="title">
+          <span class="red">Koleksi Buku</span>
+          <span class="blue">Ryan</span>
+        </h1>
+        <div class="marquee-container">
+          <div class="marquee">Selamat Datang di Website Koleksi Buku Ryan</div>
+        </div>
       </div>
     </header>
 
     <main>
-      <b
-        ><u><p class="tulisanTengah">Assalamualaikum Wr. Wb.</p></u></b
-      >
+      <p class="tulisanTengah">
+        <b><u>Assalamualaikum Wr. Wb.</u></b>
+      </p>
       <nav>
         <ul>
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#bookInformation">Koleksi Buku</a></li>
-          <li><a href="#bookRecommendation">Buku Rekomendasi</a></li>
-          <li><a href="#tentangSaya">Tentang Saya</a></li>
+          <li>
+            <a href="#beranda"><i class="fas fa-home"></i> Beranda</a>
+          </li>
+          <li>
+            <a href="#bookInformation"
+              ><i class="fas fa-book"></i> Koleksi Buku</a
+            >
+          </li>
+          <li>
+            <a href="#bookRecommendation"
+              ><i class="fas fa-thumbs-up"></i> Buku Rekomendasi</a
+            >
+          </li>
+          <li>
+            <a href="#tentangSaya"><i class="fas fa-user"></i> Tentang Saya</a>
+          </li>
         </ul>
       </nav>
 
       <div id="content">
-        <article id="bookInformation">
+        <article id="bookInformation" data-aos="fade-up">
           <h2>Koleksi Buku Ryan</h2>
-          <center>
+          <div class="featured-image-container">
             <img
               src="assets/img/collection.jpg"
               class="featured-image"
-              alt="bookinformation"
-              width="350"
-              height="150"
+              alt="Koleksi Buku"
             />
-          </center>
+          </div>
           <p class="tulisanJustify">
             Koleksi buku ini berfungsi untuk memberi wawasan kepada para pembaca
             terkait dengan informasi beberapa buku yang mungkin bisa menambah
@@ -75,124 +99,99 @@
           </p>
         </article>
 
-        <article id="beranda" class="book">
+        <article id="beranda" class="book" data-aos="fade-up">
           <h2><u>Koleksi Buku</u></h2>
-          <section>
+          <section class="book-gallery">
             <img
               src="assets/img/bukuSaktiWeb.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Buku Web"
             />
             <img
               src="assets/img/stukturData.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Struktur Data"
             />
             <img
               src="assets/img/english1.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Buku Bahasa Inggris 1"
             />
             <img
               src="assets/img/english2.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Buku Bahasa Inggris 2"
             />
             <img
               src="assets/img/english3.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Buku Bahasa Inggris 3"
             />
-            <p></p>
             <img
               src="assets/img/selfHealing.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Self Healing"
             />
             <img
               src="assets/img/insecurity.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Insecurity"
             />
             <img
               src="assets/img/atomichabits.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Atomic Habits"
             />
             <img
               src="assets/img/lulusKuliah.jpg"
               class="image"
-              alt="beranda"
-              width="210"
-              height="220"
+              alt="Lulus Kuliah"
             />
-            <img
-              src="assets/img/mindset.jpg"
-              class="image"
-              alt="beranda"
-              width="210"
-              height="220"
-            />
+            <img src="assets/img/mindset.jpg" class="image" alt="Mindset" />
           </section>
         </article>
 
-        <article id="bookRecommendation" class="book">
+        <article id="bookRecommendation" class="book" data-aos="fade-up">
           <h2>Buku Rekomendasi</h2>
-          <section>
+          <section class="book-recommendation">
             <img
               src="assets/img/stukturData.jpg"
               id="struktur"
+              class="recommendation-image"
               alt="Struktur"
-              width="210"
-              height="220"
             />
             <img
               src="assets/img/bukuSaktiWeb.jpg"
               id="sakti"
+              class="recommendation-image"
               alt="Sakti"
-              width="210"
-              height="220"
             />
             <img
               src="assets/img/mindset.jpg"
               id="mind"
+              class="recommendation-image"
               alt="Mind"
-              width="210"
-              height="220"
             />
             <img
               src="assets/img/selfHealing.jpg"
               id="self"
+              class="recommendation-image"
               alt="Self"
-              width="210"
-              height="220"
             />
           </section>
         </article>
       </div>
 
       <aside>
-        <article id="tentangSaya" class="profile">
+        <article id="tentangSaya" class="profile" data-aos="fade-right">
           <h2>Informasi Pemilik</h2>
           <h3>Biodata</h3>
           <figure>
-            <img src="assets/img/profile.png" />
+            <img
+              src="assets/img/profile.png"
+              alt="Foto Profil Ryan Gading Abdullah"
+              class="profile-image"
+            />
             <figcaption>
               <b><u>Ryan Gading Abdullah</u></b>
             </figcaption>
@@ -217,38 +216,64 @@
           </section>
         </article>
 
-        <article class="profile">
+        <article class="profile" data-aos="fade-left">
           <h2>Jenis - Jenis Buku</h2>
           <ul>
-            <li><a href="bukumotivasi">Buku Motivasi</a></li>
-            <li><a href="bukuprogram">Buku Program</a></li>
-            <li><a href="bukubahasa">Buku Bahasa</a></li>
+            <li>
+              <a href="bukumotivasi"
+                ><i class="fas fa-mountain"></i> Buku Motivasi</a
+              >
+            </li>
+            <li>
+              <a href="bukuprogram"><i class="fas fa-code"></i> Buku Program</a>
+            </li>
+            <li>
+              <a href="bukubahasa"
+                ><i class="fas fa-language"></i> Buku Bahasa</a
+              >
+            </li>
           </ul>
         </article>
 
-        <article>
+        <article data-aos="fade-up">
           <h2>Artikel</h2>
           <p>Koleksi Buku</p>
           <figure>
-            <img src="assets/img/collection2.jpg" width="350" height="150" />
+            <img
+              src="assets/img/collection2.jpg"
+              width="350"
+              height="150"
+              alt="Koleksi Buku Tambahan"
+            />
           </figure>
         </article>
       </aside>
     </main>
 
     <footer>
-      <aside id="about">
+      <div class="footer-content" data-aos="fade-up">
         <h3>Assalamualaikum wr. wb., Nama Saya Ryan Gading Abdullah</h3>
         <p class="tulisanJustify">
-          Saya adalah mahasiswa yang sedang menempuh pendidikan di semester 3
+          Saya adalah mahasiswa yang sedang menempuh pendidikan di semester 7
           Teknik Informatika FTETI ITATS (Institut Teknologi Adhi Tama
           Surabaya).
         </p>
-      </aside>
-      <p class="tulisanJustify">
-        Submission Belajar Dasar Pemrogramman Web 2022 - Dicoding Indonesia
-      </p>
+        <p class="tulisanJustify">
+          Submission Belajar Dasar Pemrograman Web 2024 - Dicoding Indonesia
+        </p>
+      </div>
     </footer>
+
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- JavaScript -->
     <script src="assets/index.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html>
