@@ -1,77 +1,91 @@
-header
-{
-    background-color: white;
-    color: black;
-    height: 10cm;
-    width: 39.80cm;
+header {
+  background-color: white;
+  color: black;
+  height: 10cm;
+  width: 100%;
 }
 
-body
-{
-    background-color: aquamarine;
-    color: black;
+body {
+  background-color: aquamarine;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-th
-{
-    text-align: left;
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 }
 
-td
-{
-    text-align: left;
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
-section
-{
-    text-align: center;
+nav ul li a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-footer
-{
-    background-color: white;
-    position: relative;
+nav ul li a:hover {
+  color: red;
 }
 
-#content
-{
-    float: right;
-    width: auto;
+img {
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-#beranda
-{
-    width: auto;
-    flex: auto;
+.image {
+  margin: 10px;
+  transition: transform 0.2s;
 }
 
-.gambarUtamaTengah
-{
-    text-align: center;
+.image:hover {
+  transform: scale(1.1);
 }
 
-.tulisanTengah
-{
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-	word-spacing: 10px;
-
+.gambarUtamaTengah {
+  text-align: center;
 }
 
-.book
-{
-    flex-basis: 30%;
-    text-align: center;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
+.tulisanTengah {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  word-spacing: 10px;
 }
 
-.tulisanJustify
-{
-    text-align: justify;
+.book {
+  flex-basis: 30%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
+.tulisanJustify {
+  text-align: justify;
+}
 
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+}
 
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 5px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
