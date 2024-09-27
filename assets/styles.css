@@ -1,0 +1,77 @@
+header
+{
+    background-color: white;
+    color: black;
+    height: 10cm;
+    width: 39.80cm;
+}
+
+body
+{
+    background-color: aquamarine;
+    color: black;
+}
+
+th
+{
+    text-align: left;
+}
+
+td
+{
+    text-align: left;
+}
+
+section
+{
+    text-align: center;
+}
+
+footer
+{
+    background-color: white;
+    position: relative;
+}
+
+#content
+{
+    float: right;
+    width: auto;
+}
+
+#beranda
+{
+    width: auto;
+    flex: auto;
+}
+
+.gambarUtamaTengah
+{
+    text-align: center;
+}
+
+.tulisanTengah
+{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+	word-spacing: 10px;
+
+}
+
+.book
+{
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.tulisanJustify
+{
+    text-align: justify;
+}
+
+
+
