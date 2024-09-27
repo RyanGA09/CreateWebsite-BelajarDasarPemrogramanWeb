@@ -15,7 +15,7 @@ header {
   color: black;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky; /* Membuat header tetap di atas saat scroll */
+  /* position: sticky; Membuat header tetap di atas saat scroll */
   top: 0;
   z-index: 100;
 }
@@ -56,7 +56,7 @@ nav ul {
   margin: 0;
   padding: 10px 0;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   flex-wrap: wrap;
 }
 
@@ -148,6 +148,7 @@ article h2 {
 aside {
   flex: 1;
   min-width: 250px;
+  padding-top: 2rem;
 }
 
 .profile {
@@ -232,6 +233,26 @@ footer {
 .footer-content p {
   margin: 5px 0;
   font-size: 1em;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none;
+  border-radius: 50%; /* Bentuk bulat */
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3; /* Warna saat hover */
+  transform: scale(1.1); /* Efek zoom */
 }
 
 /* Media Queries */
