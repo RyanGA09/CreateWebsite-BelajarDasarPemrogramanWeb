@@ -8,7 +8,7 @@ Ryan Gading Abdullah
 
 ## Description
 
-A Book Collection app that allows users to see a landing page.
+A Book Collection app that allows users to see a landing page about book collection on webpage.
 
 ## LICENSE
 
