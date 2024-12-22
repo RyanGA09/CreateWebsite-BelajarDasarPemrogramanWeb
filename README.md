@@ -14,6 +14,6 @@ A Book Collection app that allows users to see a landing page about book collect
 
 ## LICENSE:
 
-[MIT LICENSE](LICENSE)
+This project is licensed under the MIT License - see the [MIT LICENSE](LICENSE) for details.
 
 &copy; 2024 Ryan Gading Abdullah. All rights reserved.
